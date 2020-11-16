@@ -1,46 +1,46 @@
 package byt_4_5
 
+// Example of state design pattern
+
 fun main() {
     testState()
 }
 
 fun testState() {
     var boss = GameBoss()
-    println("Current state is ${boss.state!!.javaClass.simpleName} current health is ${boss.health}")
+    println("Current state is ${boss.state.javaClass.simpleName} current health is ${boss.health}")
     while (boss.health >= 0) {
         boss.primaryAttack()
         boss.secondaryAttack()
         boss.move()
         boss.takeDamage(25)
     }
-
     boss = GameBoss()
-    println("\nCurrent state is ${boss.state!!.javaClass.simpleName} current health is ${boss.health}")
+    println("\nCurrent state is ${boss.state.javaClass.simpleName} current health is ${boss.health}")
     boss.takeDamage(100)
 }
 
 
-class GameBoss(var health: Int = 100, var state: State? = null) {
-    init {
-        state = Healthy(this)
-    }
+class GameBoss {
+    var health: Int = 100
+    var state: State = Healthy(this)
 
     fun primaryAttack() {
-        state?.primaryAttack()
+        state.primaryAttack()
     }
 
     fun secondaryAttack() {
-        state?.secondaryAttack()
+        state.secondaryAttack()
     }
 
     fun move() {
-        state?.move()
+        state.move()
     }
 
     fun takeDamage(damage: Int) {
         health -= damage
         println("$damage damage taken, current health is $health")
-        state?.takeDamage()
+        state.takeDamage()
     }
 }
 
