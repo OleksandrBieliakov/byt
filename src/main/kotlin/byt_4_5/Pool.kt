@@ -31,10 +31,10 @@ fun time(): String {
 
 class Worker(private val id: Int) {
     suspend fun performTask(clientId: Int, taskId: Int) {
-        println("${time()} Task-$taskId STARTED by byt_4_5.Worker-$id for byt_4_5.Client-$clientId")
-        // wait for some byt_4_5.time to imitate some work
+        println("${time()} Task-$taskId STARTED by Worker-$id for Client-$clientId")
+        // wait for some time to imitate some work
         delay(2000)
-        println("${time()} Task-$taskId FINISHED by byt_4_5.Worker-$id for byt_4_5.Client-$clientId")
+        println("${time()} Task-$taskId FINISHED by Worker-$id for Client-$clientId")
     }
 }
 
@@ -53,11 +53,11 @@ object WorkersPool {
 
 class Client(private val id: Int) {
     suspend fun submitTask(taskId: Int) {
-        println("${time()} Task-$taskId SUBMITTED by byt_4_5.Client-$id")
+        println("${time()} Task-$taskId SUBMITTED by Client-$id")
         var worker: Worker?
         do {
             worker = WorkersPool.requestWorker()
-            // wait for some byt_4_5.time before requesting a worker again
+            // wait for some time before requesting a worker again
             if (worker == null)
                 delay(500)
         } while (worker == null)
