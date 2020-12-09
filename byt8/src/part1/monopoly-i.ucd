@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="monopoly-i" size="793,1631" id="part1" metadata="nsuml-1.4" initialized="true" scrolledY="955" tag="10" key="3230303430363135204D6F6E6F706F6C79">
+  <children xsi:type="editmodel:ClassEditModel" name="GameboardTest" location="50,1337" size="191,139" id="part1/GameboardTest" runTimeClassModel="testAddCell(),testQueryCellIndex(),testCellsForMonopoly(),testPropertyNumberForColor(),testQueryCell()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="168,90">
+      <children xsi:type="editmodel:MethodEditModel" name="testAddCell" id="part1/GameboardTest#testAddCell()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testCellsForMonopoly" id="part1/GameboardTest#testCellsForMonopoly()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testPropertyNumberForColor" id="part1/GameboardTest#testPropertyNumberForColor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testQueryCell" id="part1/GameboardTest#testQueryCell()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testQueryCellIndex" id="part1/GameboardTest#testQueryCellIndex()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GameMasterTest" location="539,1337" size="149,103" id="part1/GameMasterTest" runTimeClassModel="testReset(),testTurn(),testInit()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,54">
+      <children xsi:type="editmodel:MethodEditModel" name="testInit" id="part1/GameMasterTest#testInit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testReset" id="part1/GameMasterTest#testReset()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testTurn" id="part1/GameMasterTest#testTurn()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PropertyCellTest" location="489,1526" size="148,67" id="part1/PropertyCellTest" runTimeClassModel="testPlayerAction()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="110,18">
+      <children xsi:type="editmodel:MethodEditModel" name="testPlayerAction" id="part1/PropertyCellTest#testPlayerAction()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Player" location="513,914" size="147,229" id="part1/Player" runTimeClassModel="canBuyHouse(),payRentTo(Lpart1.Player;I),checkProperty(Ljava.lang.String;),getMonopolies(),getPropertyNumber(),purchaseProperty(),purchaseHouse(Ljava.lang.String;I),money,getProperty(I),name">
+    <children xsi:type="editmodel:CompartmentEditModel" size="80,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="money" id="part1/Player#money"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="part1/Player#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,144">
+      <children xsi:type="editmodel:MethodEditModel" name="canBuyHouse" id="part1/Player#canBuyHouse()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="checkProperty" id="part1/Player#checkProperty(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMonopolies" id="part1/Player#getMonopolies()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getProperty" id="part1/Player#getProperty(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPropertyNumber" id="part1/Player#getPropertyNumber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="payRentTo" id="part1/Player#payRentTo(Lpart1.Player;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="purchaseHouse" id="part1/Player#purchaseHouse(Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="purchaseProperty" id="part1/Player#purchaseProperty()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GameboardCreationTest" location="291,1337" size="198,103" id="part1/GameboardCreationTest" runTimeClassModel="testCellAddOrder(),testCellAddOrder14(),testGameboardLayout()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="138,54">
+      <children xsi:type="editmodel:MethodEditModel" name="testCellAddOrder" id="part1/GameboardCreationTest#testCellAddOrder()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testCellAddOrder14" id="part1/GameboardCreationTest#testCellAddOrder14()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testGameboardLayout" id="part1/GameboardCreationTest#testGameboardLayout()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GameMaster" location="309,914" size="154,373" id="part1/GameMaster" runTimeClassModel="movePlayer(II),movePlayer(Lpart1.Player;I),turn,rollDice(),getPlayer(I),reset(),setGUI(Lpart1.MonopolyGUI;),instance(),initAmountOfMoney,switchTurn(),getNumberOfPlayers(),playerMoved(Lpart1.Player;),startGame(),getPlayerIndex(Lpart1.Player;),updateGUI(),setNumberOfPlayers(I),MAX_PLAYER,getCurrentPlayer()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="MAX_PLAYER" id="part1/GameMaster#MAX_PLAYER"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="initAmountOfMoney" id="part1/GameMaster#initAmountOfMoney"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="turn" id="part1/GameMaster#turn"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,270">
+      <children xsi:type="editmodel:MethodEditModel" name="getCurrentPlayer" id="part1/GameMaster#getCurrentPlayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNumberOfPlayers" id="part1/GameMaster#getNumberOfPlayers()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPlayer" id="part1/GameMaster#getPlayer(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPlayerIndex" id="part1/GameMaster#getPlayerIndex(Lpart1.Player;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="instance" id="part1/GameMaster#instance()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="movePlayer" id="part1/GameMaster#movePlayer(Lpart1.Player;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="movePlayer" id="part1/GameMaster#movePlayer(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="playerMoved" id="part1/GameMaster#playerMoved(Lpart1.Player;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="reset" id="part1/GameMaster#reset()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="rollDice" id="part1/GameMaster#rollDice()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setGUI" id="part1/GameMaster#setGUI(Lpart1.MonopolyGUI;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setNumberOfPlayers" id="part1/GameMaster#setNumberOfPlayers(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startGame" id="part1/GameMaster#startGame()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="switchTurn" id="part1/GameMaster#switchTurn()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="updateGUI" id="part1/GameMaster#updateGUI()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CellInfoFormatterTest" location="50,1526" size="180,85" id="part1/CellInfoFormatterTest" runTimeClassModel="testGoCellTest(),testPropertyCellText()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="128,36">
+      <children xsi:type="editmodel:MethodEditModel" name="testGoCellTest" id="part1/CellInfoFormatterTest#testGoCellTest()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testPropertyCellText" id="part1/CellInfoFormatterTest#testPropertyCellText()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Die" location="687,1526" size="86,67" id="part1/Die" runTimeClassModel="getRoll()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="63,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getRoll" id="part1/Die#getRoll()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PlayerTest" location="280,1526" size="159,85" id="part1/PlayerTest" runTimeClassModel="testPurchaseProperty(),testSameGoCell()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="136,36">
+      <children xsi:type="editmodel:MethodEditModel" name="testPurchaseProperty" id="part1/PlayerTest#testPurchaseProperty()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="testSameGoCell" id="part1/PlayerTest#testSameGoCell()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.0" name="SimpleGameBoardFixture" location="50,914" size="209,175" id="part1/SimpleGameBoardFixture" runTimeClassModel="purchaseProperty(),playerMoney(),initializeGameBoard(),endTurn(),propertyAvailable(),numberOfPlayers(I),playerDiceRoll(I)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,126">
+      <children xsi:type="editmodel:MethodEditModel" name="endTurn" id="part1/SimpleGameBoardFixture#endTurn()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="initializeGameBoard" id="part1/SimpleGameBoardFixture#initializeGameBoard()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="numberOfPlayers" id="part1/SimpleGameBoardFixture#numberOfPlayers(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="playerDiceRoll" id="part1/SimpleGameBoardFixture#playerDiceRoll(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="playerMoney" id="part1/SimpleGameBoardFixture#playerMoney()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="propertyAvailable" id="part1/SimpleGameBoardFixture#propertyAvailable()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="purchaseProperty" id="part1/SimpleGameBoardFixture#purchaseProperty()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PayRent" location="92,1139" size="124,85" id="part1/PayRent" runTimeClassModel="playerBMoney(),playerAMoney()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="101,36">
+      <children xsi:type="editmodel:MethodEditModel" name="playerAMoney" id="part1/PayRent#playerAMoney()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="playerBMoney" id="part1/PayRent#playerBMoney()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="part1/SimpleGameBoardFixture&lt;-part1/PayRent" source="//@children.10" target="//@children.9" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual" anchorType="ChopBox">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-1,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MainWindow" location="50,275" size="294,193" id="part1.gui/MainWindow" runTimeClassModel="movePlayer(III),update(),enablePurchaseBtn(I),updateHouseButton(I),enableEndTurnBtn(I),enablePlayerTurn(I),startGame(),setupGameBoard(Lpart1.GameBoard;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,144">
+      <children xsi:type="editmodel:MethodEditModel" name="enableEndTurnBtn" id="part1.gui/MainWindow#enableEndTurnBtn(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="enablePlayerTurn" id="part1.gui/MainWindow#enablePlayerTurn(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="enablePurchaseBtn" id="part1.gui/MainWindow#enablePurchaseBtn(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="movePlayer" id="part1.gui/MainWindow#movePlayer(III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setupGameBoard" id="part1.gui/MainWindow#setupGameBoard(Lpart1.GameBoard;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startGame" id="part1.gui/MainWindow#startGame()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="part1.gui/MainWindow#update()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="updateHouseButton" id="part1.gui/MainWindow#updateHouseButton(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.13/@sourceConnections.0" id="part1/MonopolyGUI&lt;-part1.gui/MainWindow" source="//@children.11" target="//@children.12" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan" anchorType="FixedAtEdge">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="147,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="74,175" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.11/@sourceConnections.0" name="MonopolyGUI" location="248,50" size="149,175" id="part1/MonopolyGUI" runTimeClassModel="movePlayer(III),update(),updateHouseButton(I),enablePurchaseBtn(I),enableEndTurnBtn(I),enablePlayerTurn(I),startGame()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,126">
+      <children xsi:type="editmodel:MethodEditModel" name="enableEndTurnBtn" id="part1/MonopolyGUI#enableEndTurnBtn(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="enablePlayerTurn" id="part1/MonopolyGUI#enablePlayerTurn(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="enablePurchaseBtn" id="part1/MonopolyGUI#enablePurchaseBtn(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="movePlayer" id="part1/MonopolyGUI#movePlayer(III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startGame" id="part1/MonopolyGUI#startGame()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="part1/MonopolyGUI#update()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="updateHouseButton" id="part1/MonopolyGUI#updateHouseButton(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MockGUI" location="374,275" size="149,175" id="part1/MockGUI" runTimeClassModel="movePlayer(III),update(),updateHouseButton(I),enablePurchaseBtn(I),enableEndTurnBtn(I),enablePlayerTurn(I),startGame()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,126">
+      <children xsi:type="editmodel:MethodEditModel" name="enableEndTurnBtn" id="part1/MockGUI#enableEndTurnBtn(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="enablePlayerTurn" id="part1/MockGUI#enablePlayerTurn(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="enablePurchaseBtn" id="part1/MockGUI#enablePurchaseBtn(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="movePlayer" id="part1/MockGUI#movePlayer(III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startGame" id="part1/MockGUI#startGame()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="part1/MockGUI#update()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="updateHouseButton" id="part1/MockGUI#updateHouseButton(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="part1/MonopolyGUI&lt;-part1/MockGUI" source="//@children.13" target="//@children.11/@sourceConnections.0" targetEnd="//@children.13/@sourceConnections.0/@children.1" sourceEnd="//@children.13/@sourceConnections.0/@children.0" connectionRouterKind="Manual" anchorType="FixedAtEdge">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="74,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SimpleGameBoard" location="213,761" size="164,29" id="part1/SimpleGameBoard" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="part1/GameBoard&lt;-part1/SimpleGameBoard" source="//@children.14" target="//@children.15/@sourceConnections.0" targetEnd="//@children.14/@sourceConnections.0/@children.1" sourceEnd="//@children.14/@sourceConnections.0/@children.0" connectionRouterKind="Manual" anchorType="FixedAtEdge">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="82,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GameBoard14" location="50,761" size="133,29" id="part1/GameBoard14" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.14/@sourceConnections.0" id="part1/GameBoard&lt;-part1/GameBoard14" source="//@children.15" target="//@children.16" targetEnd="//@children.15/@sourceConnections.0/@children.1" sourceEnd="//@children.15/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan" anchorType="FixedAtEdge">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="66,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="94,193" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.0" name="GameBoard" location="111,518" size="188,193" id="part1/GameBoard" runTimeClassModel="addCell(Lpart1.Cell;),getCell(I),queryCellIndex(Ljava.lang.String;),getPropertyNumberForColor(Ljava.lang.String;),queryCell(Ljava.lang.String;),getPropertiesInMonopoly(Ljava.lang.String;),getCellNumber(),addCell(Lpart1.PropertyCell;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="165,144">
+      <children xsi:type="editmodel:MethodEditModel" name="addCell" id="part1/GameBoard#addCell(Lpart1.Cell;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addCell" id="part1/GameBoard#addCell(Lpart1.PropertyCell;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCell" id="part1/GameBoard#getCell(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCellNumber" id="part1/GameBoard#getCellNumber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPropertiesInMonopoly" id="part1/GameBoard#getPropertiesInMonopoly(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPropertyNumberForColor" id="part1/GameBoard#getPropertyNumberForColor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="queryCell" id="part1/GameBoard#queryCell(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="queryCellIndex" id="part1/GameBoard#queryCellIndex(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GoCell" location="579,689" size="105,85" id="part1/GoCell" runTimeClassModel="playAction(),setName(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="82,36">
+      <children xsi:type="editmodel:MethodEditModel" name="playAction" id="part1/GoCell#playAction()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setName" id="part1/GoCell#setName(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="part1/Cell&lt;-part1/GoCell" source="//@children.17" target="//@children.19/@sourceConnections.0" targetEnd="//@children.17/@sourceConnections.0/@children.1" sourceEnd="//@children.17/@sourceConnections.0/@children.0" connectionRouterKind="Manual" anchorType="FixedAtEdge">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="52,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.19/@sourceConnections.0" name="Cell" location="495,518" size="129,121" id="part1/Cell" runTimeClassModel="playAction(),getPrice(),available,name">
+    <children xsi:type="editmodel:CompartmentEditModel" size="106,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="available" id="part1/Cell#available"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="part1/Cell#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="82,36">
+      <children xsi:type="editmodel:MethodEditModel" name="getPrice" id="part1/Cell#getPrice()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="playAction" id="part1/Cell#playAction()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PropertyCell" location="427,689" size="122,175" id="part1/PropertyCell" runTimeClassModel="housePrice,setPrice(I),playAction(),toString(),getPrice(),numHouses,rent">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="housePrice" id="part1/PropertyCell#housePrice"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="numHouses" id="part1/PropertyCell#numHouses"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rent" id="part1/PropertyCell#rent"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="82,72">
+      <children xsi:type="editmodel:MethodEditModel" name="getPrice" id="part1/PropertyCell#getPrice()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="playAction" id="part1/PropertyCell#playAction()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPrice" id="part1/PropertyCell#setPrice(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="part1/PropertyCell#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.17/@sourceConnections.0" id="part1/Cell&lt;-part1/PropertyCell" source="//@children.19" target="//@children.18" targetEnd="//@children.19/@sourceConnections.0/@children.1" sourceEnd="//@children.19/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan" anchorType="FixedAtEdge">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="61,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="64,121" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

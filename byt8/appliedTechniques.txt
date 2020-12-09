@@ -1,0 +1,55 @@
+Refactoring techniques applied to remove "bad smells" in Part2 task.
+
+exercise01
+    Bad smell 1: unnecessary constructor.
+    Refactoring 1: removed unnecessary constructor.
+
+    Bad smell 2: method match() doing multiple unrelated things which requires commenting each of these parts.
+    Refactoring 2: extracted each of method's parts to separate methods with descriptive names.
+
+exercise02
+    Bad smell 1: not descriptive parameters names in ConfigurationException constructors.
+    Refactoring 1: changed parameters names to more meaningful.
+
+    Bad smell 2: method load() contains duplicated code.
+    Refactoring 2: extracted duplicated code to multiple smaller methods.
+
+exercise03
+    Bad smell 1: unnecessary shortening of the "op" parameter in the constructor.
+    Refactoring 1: changed to "operation".
+
+    Refactoring 2: changed Expression constructor to be a sort of Factory of Evaluators. Implementation of the Evaluator
+    functional interface is called in the evaluate() method of Expression to directly perform an operation instead of
+    using the switch statement each time evaluate() is called.
+
+exercise04
+    Bad smell 1: methods which operate using Person fields only are implemented in separate classes.
+    Refactoring 1: moved those methods to class Person, removed Client classes.
+
+    Bad smell 2: duplicated code - methods toString() and display() use the same formatting as the one returned
+    by the method formatPerson().
+    Refactoring 2: replaced bodies of the methods toString() and display() with calls to formatPerson().
+
+    Refactoring 3: made Person fields private.
+
+exercise05
+    Bad smell 1: unnecessary constructor.
+    Refactoring 1: removed unnecessary constructor.
+
+    Bad smell 2: common part System.out.println(); in both if and else blocks.
+    Refactoring 2: common part extracted from 'if', 'if' condition reverted.
+
+    Refactoring 3: extracted boolean expression from method writeField() to separate method requiresQuotes()
+
+exercise06
+    Bad smell 1: not descriptive names of one of the constructor parameters.
+    Refactoring 1: renamed to 'boardString'.
+
+    Bad smell 2: method winner() doing multiple unrelated things which requires commenting each of these parts.
+    Refactoring 2: extracted each of method's parts to separate methods with descriptive names.
+
+    Bad smell 3: method suggestMove() doing two unrelated operations.
+    Refactoring 3: extracted each of method's parts to separate methods with descriptive names.
+
+    Bad smell 4: access modifier of the field 'board' is public, but it's accessed only within a class.
+    Refactoring 4: changed to private.
