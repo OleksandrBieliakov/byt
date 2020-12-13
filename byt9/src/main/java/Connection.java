@@ -12,10 +12,6 @@ public class Connection {
         this.connection = connection;
     }
 
-    Connection(URLConnection connection) {
-        this.connection = connection;
-    }
-
     public void setUrl(String url) {
         this.url = url;
     }

@@ -25,7 +25,13 @@ public class Monitor {
         urlObservers.add(observer);
     }
 
-    public void monitor(int workTimeMilliseconds) throws IOException {
+    private Connection createConnection(String url) throws IOException {
+        URL address = newURL(url);
+        URLConnection connection = address.openConnection();
+        return new Connection(url, connection);
+    }
+
+    public void monitor(int workTimeMilliseconds) {
         while (workTimeMilliseconds > 0) {
             checkUrls();
             try {
@@ -43,12 +49,6 @@ public class Monitor {
             currentDateModified = connection.lastModified();
             broadcast(connection, currentDateModified);
         }
-    }
-
-    private Connection createConnection(String url) throws IOException {
-        URL address = newURL(url);
-        URLConnection connection = address.openConnection();
-        return new Connection(url, connection);
     }
 
     private void broadcast(Connection connection, Date currentDateModified) {

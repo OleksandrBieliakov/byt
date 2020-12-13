@@ -43,10 +43,10 @@ public class MonitorTest {
             monitor.register(observer1);
             monitor.register(observer2);
             monitor.register(observer3);
-            monitor.monitor(WORK_TIME_MILLISECONDS);
         } catch (IOException e) {
             fail(e.toString());
         }
+        monitor.monitor(WORK_TIME_MILLISECONDS);
     }
 
     @Test
@@ -70,13 +70,9 @@ public class MonitorTest {
         connectionMock1.setUrl(URL1);
         connectionMock2.setUrl(URL2);
         connectionMock3.setUrl(URL3);
-        try {
-            monitor.registerObserverWithConnection(observer1, connectionMock1);
-            monitor.registerObserverWithConnection(observer2, connectionMock2);
-            monitor.registerObserverWithConnection(observer3, connectionMock3);
-            monitor.monitor(WORK_TIME_MILLISECONDS);
-        } catch (IOException e) {
-            fail(e.toString());
-        }
+        monitor.registerObserverWithConnection(observer1, connectionMock1);
+        monitor.registerObserverWithConnection(observer2, connectionMock2);
+        monitor.registerObserverWithConnection(observer3, connectionMock3);
+        monitor.monitor(WORK_TIME_MILLISECONDS);
     }
 }
