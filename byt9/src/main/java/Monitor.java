@@ -9,17 +9,19 @@ public class Monitor {
 
     private static final int PERIOD_MILLISECONDS = 1000;
 
-    private final HashMap<String, Set<Observer>> observers = new HashMap<>();
-
-    private String url;
-    private URLConnection connection;
+    private final HashMap<Connection, Set<Observer>> observers = new HashMap<>();
 
     public void register(Observer observer) throws IOException {
         String url = observer.getUrl();
+        Connection connection = createConnection(url);
+        registerObserverWithConnection(observer, connection);
+    }
+
+    public void registerObserverWithConnection(Observer observer, Connection connection) {
         if (observer.getLastModified() == null) {
-            observer.update(lastModified(url));
+            observer.update(connection.lastModified());
         }
-        Set<Observer> urlObservers = observers.computeIfAbsent(url, k -> new HashSet<>());
+        Set<Observer> urlObservers = observers.computeIfAbsent(connection, k -> new HashSet<>());
         urlObservers.add(observer);
     }
 
@@ -35,26 +37,22 @@ public class Monitor {
         }
     }
 
-    private void checkUrls() throws IOException {
+    private void checkUrls() {
         Date currentDateModified;
-        for (String url : observers.keySet()) {
-            currentDateModified = lastModified(url);
-            broadcast(url, currentDateModified);
+        for (Connection connection : observers.keySet()) {
+            currentDateModified = connection.lastModified();
+            broadcast(connection, currentDateModified);
         }
     }
 
-    private Date lastModified(String url) throws IOException {
-        URL address;
-        if (!url.equals(this.url)) {
-            address = newURL(url);
-            connection = address.openConnection();
-        }
-        long longtime = connection.getLastModified();
-        return new Date(longtime);
+    private Connection createConnection(String url) throws IOException {
+        URL address = newURL(url);
+        URLConnection connection = address.openConnection();
+        return new Connection(url, connection);
     }
 
-    private void broadcast(String url, Date currentDateModified) {
-        for (Observer observer : observers.get(url)) {
+    private void broadcast(Connection connection, Date currentDateModified) {
+        for (Observer observer : observers.get(connection)) {
             if (currentDateModified.compareTo(observer.getLastModified()) > 0) {
                 observer.update(currentDateModified);
             }
@@ -63,12 +61,12 @@ public class Monitor {
 
     public String serialize() {
         StringBuilder buffer = new StringBuilder();
-        for (String url : observers.keySet()) {
+        for (Connection connection : observers.keySet()) {
             buffer.append("url");
             buffer.append('\n');
-            buffer.append(url);
+            buffer.append(connection.getUrl());
             buffer.append('\n');
-            for (Observer observer : observers.get(url)) {
+            for (Observer observer : observers.get(connection)) {
                 buffer.append(observer.serialize());
                 buffer.append('\n');
             }
