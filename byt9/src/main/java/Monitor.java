@@ -16,7 +16,9 @@ public class Monitor {
 
     public void register(Observer observer) throws IOException {
         String url = observer.getUrl();
-        observer.update(lastModified(url));
+        if (observer.getLastModified() == null) {
+            observer.update(lastModified(url));
+        }
         Set<Observer> urlObservers = observers.computeIfAbsent(url, k -> new HashSet<>());
         urlObservers.add(observer);
     }
@@ -57,5 +59,33 @@ public class Monitor {
                 observer.update(currentDateModified);
             }
         }
+    }
+
+    public String serialize() {
+        StringBuilder buffer = new StringBuilder();
+        for (String url : observers.keySet()) {
+            buffer.append("url");
+            buffer.append('\n');
+            buffer.append(url);
+            buffer.append('\n');
+            for (Observer observer : observers.get(url)) {
+                buffer.append(observer.serialize());
+                buffer.append('\n');
+            }
+        }
+        return buffer.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Monitor)) return false;
+        Monitor monitor = (Monitor) o;
+        return observers.equals(monitor.observers);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(observers);
     }
 }
