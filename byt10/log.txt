@@ -1,0 +1,42 @@
+commit a3ffdf0d1353539ad4c21b11c8697dfb93874565
+Merge: 11a9b73 6559501
+Author: Oleksandr Bieliakov <abel9k@gmail.com>
+Date:   Wed Jan 6 14:46:47 2021 +0100
+
+    merged solved conflict
+
+commit 6559501d4aa3761776b5501cee9339ac617be76b
+Author: Oleksandr Bieliakov <abel9k@gmail.com>
+Date:   Wed Jan 6 14:43:56 2021 +0100
+
+    file2 modified in branch
+
+ file2.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 11a9b732fec4b07894f272d87adb8f8114e85f17
+Author: Oleksandr Bieliakov <abel9k@gmail.com>
+Date:   Wed Jan 6 14:42:24 2021 +0100
+
+    file2 modified
+
+ file2.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 562917caa4303735ed44761a4467f3a9c701fb2f
+Author: Oleksandr Bieliakov <abel9k@gmail.com>
+Date:   Wed Jan 6 14:39:39 2021 +0100
+
+    Second commit
+
+ file2.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit d74d67cf36ca6546b1e91108a067845ce010b467
+Author: Oleksandr Bieliakov <abel9k@gmail.com>
+Date:   Wed Jan 6 14:38:37 2021 +0100
+
+    First commit
+
+ file1.txt | 1 +
+ 1 file changed, 1 insertion(+)
